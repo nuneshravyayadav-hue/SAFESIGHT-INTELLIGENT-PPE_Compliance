@@ -19,6 +19,7 @@ As part of this repository, I have:
 - Added the dataset configuration file (`data.yaml`).
 - Developed `clean_labels.py` to clean and remap annotation labels.
 - Developed `check_dataset.py` to verify the dataset structure and identify missing annotation files.
+- Added `train.py` to define the YOLOv8 model training workflow using the project dataset configuration.
 - Added `requirements.txt` to manage the required project dependencies.
 
 ## Repository Structure
@@ -27,6 +28,7 @@ As part of this repository, I have:
 .
 ├── clean_labels.py
 ├── check_dataset.py
+├── train.py
 ├── data.yaml
 ├── requirements.txt
 └── README.md
@@ -52,6 +54,11 @@ Run the dataset validation script:
 
 ```bash
 python check_dataset.py
+```
+Run the YOLOv8 training script:
+
+```bash
+python train.py
 ```
 
 ## Technologies used
